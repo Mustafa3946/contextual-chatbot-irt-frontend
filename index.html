@@ -82,7 +82,7 @@
       sendButton.disabled = true; // Disable button while waiting for response
 
       // Show loading state
-      chat.innerHTML += `<div class='bot' id='loading'>IRTA is typing...</div>`;
+      chat.innerHTML += `<div class='bot' id='loading'>IRT is typing...</div>`;
       chat.scrollTop = chat.scrollHeight; // Auto-scroll to the bottom
 
       try {
@@ -99,14 +99,14 @@
         const data = await response.json();
 
         document.getElementById('loading').remove();
-        chat.innerHTML += `<div class='bot'>IRTA: ${data.answer}</div>`;
+        chat.innerHTML += `<div class='bot'>IRT: ${data.answer}</div>`;
         chat.scrollTop = chat.scrollHeight; // Auto-scroll to the bottom
 
       } catch (error) {
         console.error('Error:', error);
         const loading = document.getElementById('loading');
         if (loading) loading.remove();
-        chat.innerHTML += `<div class='bot'>IRTAt: Sorry, something went wrong!</div>`;
+        chat.innerHTML += `<div class='bot'>IRT: Sorry, something went wrong!</div>`;
         chat.scrollTop = chat.scrollHeight; // Auto-scroll to the bottom
       }
 
