@@ -48,7 +48,7 @@ Chatbot Response
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/Mustafa3946/contextual-chatbot-irt.git
+git clone https://github.com/Mustafa3946/contextual-chatbot-irt-frontend.git
 cd contextual-chatbot-irt
 ```
 
